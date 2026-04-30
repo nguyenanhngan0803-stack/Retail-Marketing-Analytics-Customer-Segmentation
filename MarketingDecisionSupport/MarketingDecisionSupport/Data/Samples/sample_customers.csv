@@ -1,0 +1,11 @@
+ID,Year_Birth,Education,Marital_Status,Income,Kidhome,Teenhome,Dt_Customer,Recency,MntWines,MntFruits,MntMeatProducts,MntFishProducts,MntSweetProducts,MntGoldProds,NumDealsPurchases,NumWebPurchases,NumCatalogPurchases,NumStorePurchases,NumWebVisitsMonth,Response,Email_Open_Rate,NPS_Score
+1826,1970,Graduation,Married,84835,0,0,10/01/2013,0,340,70,380,120,50,230,2,6,5,7,1,1,0.43,10
+2079,1947,Graduation,Married,81044,0,1,05/03/2013,0,320,40,360,110,58,320,1,5,4,6,1,0,0.22,8
+10530,1959,Master,Together,67786,0,0,14/06/2013,0,300,35,250,98,44,429,2,5,3,6,1,1,0.38,9
+7348,1958,Graduation,Married,71691,0,0,20/02/2013,1,320,52,310,110,65,335,2,7,4,6,2,1,0.45,9
+7962,1987,PhD,Single,95169,0,0,03/05/2013,1,500,100,520,180,110,491,1,8,6,8,1,1,0.71,10
+1524,1983,Graduation,Married,81698,0,0,11/07/2013,1,240,64,345,122,78,255,2,5,4,5,5,1,0.63,8
+3725,1961,Graduation,Together,84865,0,0,10/04/2013,1,390,80,410,145,82,581,3,6,4,7,4,1,0.85,10
+5114,1965,Master,Married,74806,0,1,16/09/2013,1,180,35,240,90,42,378,4,4,3,5,4,0,0.18,6
+7030,1955,Graduation,Married,66465,1,0,02/02/2013,1,210,42,305,102,56,770,5,4,2,5,6,1,0.33,7
+9687,1975,Graduation,Single,73170,0,1,04/11/2013,1,120,28,210,75,31,262,3,3,2,4,2,0,0.16,5

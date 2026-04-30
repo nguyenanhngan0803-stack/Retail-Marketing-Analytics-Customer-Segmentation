@@ -1,0 +1,13 @@
+Invoice_ID,Customer_ID,Product_Name,Quantity
+INV001,1826,Champagne,1
+INV001,1826,Bò bít tết,1
+INV002,2079,Vang đỏ Bordeaux,1
+INV002,2079,Phô mai nhập khẩu,1
+INV003,10530,Champagne,1
+INV003,10530,Vang trắng Chablis,1
+INV004,7348,Bò bít tết,1
+INV004,7348,Vang đỏ Bordeaux,1
+INV005,7962,Cá hồi Na Uy,1
+INV005,7962,Champagne,1
+INV006,3725,Bò bít tết,1
+INV006,3725,Vang hồng,1

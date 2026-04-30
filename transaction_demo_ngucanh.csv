@@ -1,0 +1,325 @@
+﻿Invoice_ID,Customer_ID,Product_Name,Quantity
+ORD20001,7001,Cá tuyết phi lê,1
+ORD20002,7001,Thăn bò Wagyu,2
+ORD20002,7001,Phô mai Brie,2
+ORD20003,7001,Giỏ trái cây nhập khẩu,1
+ORD20004,7002,Phô mai Brie,1
+ORD20005,7002,Phô mai Brie,2
+ORD20005,7002,Vang Ý Reserva,3
+ORD20006,7002,Phô mai Brie,1
+ORD20006,7002,Vang Ý Reserva,3
+ORD20007,7003,Giỏ trái cây nhập khẩu,1
+ORD20008,7003,Vang Chile Premium,2
+ORD20009,7003,Vang Ý Reserva,2
+ORD20010,7003,Vang Ý Reserva,1
+ORD20010,7003,Quà tặng mạ vàng,3
+ORD20010,7003,Giỏ trái cây nhập khẩu,3
+ORD20011,7003,Thăn bò Wagyu,2
+ORD20011,7003,Phô mai Brie,1
+ORD20011,7003,Cá tuyết phi lê,3
+ORD20012,7003,Cá tuyết phi lê,2
+ORD20012,7003,Phô mai Brie,2
+ORD20013,7004,Vang Ý Reserva,1
+ORD20014,7004,Socola hạnh nhân,1
+ORD20014,7004,Phô mai Brie,2
+ORD20015,7004,Set quà gourmet,1
+ORD20015,7004,Thăn bò Wagyu,1
+ORD20015,7004,Phô mai Brie,3
+ORD20016,7005,Bánh tiramisu,3
+ORD20016,7005,Socola hạnh nhân,3
+ORD20016,7005,Giỏ trái cây nhập khẩu,1
+ORD20017,7005,Vang Chile Premium,2
+ORD20017,7005,Vang Ý Reserva,1
+ORD20018,7005,Thăn bò Wagyu,2
+ORD20018,7005,Phô mai Brie,3
+ORD20018,7005,Cá tuyết phi lê,1
+ORD20019,7005,Bánh tiramisu,3
+ORD20019,7005,Thăn bò Wagyu,1
+ORD20019,7005,Quà tặng mạ vàng,1
+ORD20020,7006,Vang Chile Premium,3
+ORD20020,7006,Quà tặng mạ vàng,2
+ORD20021,7006,Set quà gourmet,1
+ORD20021,7006,Bánh tiramisu,3
+ORD20021,7006,Phô mai Brie,3
+ORD20022,7006,Vang Ý Reserva,1
+ORD20022,7006,Giỏ trái cây nhập khẩu,2
+ORD20022,7006,Cá tuyết phi lê,1
+ORD20023,7007,Set quà gourmet,3
+ORD20023,7007,Thăn bò Wagyu,3
+ORD20023,7007,Giỏ trái cây nhập khẩu,1
+ORD20024,7007,Bánh tiramisu,3
+ORD20025,7007,Quà tặng mạ vàng,3
+ORD20026,7007,Cá tuyết phi lê,3
+ORD20027,7007,Thăn bò Wagyu,3
+ORD20027,7007,Phô mai Brie,2
+ORD20028,7008,Thăn bò Wagyu,1
+ORD20029,7008,Phô mai Brie,2
+ORD20029,7008,Giỏ trái cây nhập khẩu,2
+ORD20029,7008,Thăn bò Wagyu,1
+ORD20030,7008,Set quà gourmet,1
+ORD20030,7008,Giỏ trái cây nhập khẩu,2
+ORD20031,7009,Set quà gourmet,1
+ORD20031,7009,Vang Chile Premium,1
+ORD20032,7009,Quà tặng mạ vàng,2
+ORD20032,7009,Vang Chile Premium,2
+ORD20033,7009,Quà tặng mạ vàng,2
+ORD20033,7009,Giỏ trái cây nhập khẩu,2
+ORD20034,7010,Quà tặng mạ vàng,2
+ORD20034,7010,Giỏ trái cây nhập khẩu,1
+ORD20035,7010,Set quà gourmet,3
+ORD20036,7010,Cá tuyết phi lê,1
+ORD20037,7010,Giỏ trái cây nhập khẩu,3
+ORD20037,7010,Socola hạnh nhân,3
+ORD20037,7010,Cá tuyết phi lê,2
+ORD20038,7010,Vang Chile Premium,1
+ORD20039,7010,Thăn bò Wagyu,3
+ORD20039,7010,Bánh tiramisu,3
+ORD20040,7010,Cá tuyết phi lê,2
+ORD20040,7010,Phô mai Brie,3
+ORD20041,7011,Giỏ trái cây nhập khẩu,2
+ORD20041,7011,Bánh tiramisu,1
+ORD20042,7011,Phô mai Brie,2
+ORD20043,7011,Set quà gourmet,1
+ORD20044,7011,Thăn bò Wagyu,3
+ORD20044,7011,Socola hạnh nhân,3
+ORD20045,7011,Quà tặng mạ vàng,2
+ORD20046,7011,Quà tặng mạ vàng,3
+ORD20046,7011,Vang Ý Reserva,1
+ORD20046,7011,Giỏ trái cây nhập khẩu,3
+ORD20047,7011,Bánh tiramisu,2
+ORD20047,7011,Phô mai Brie,1
+ORD20047,7011,Giỏ trái cây nhập khẩu,3
+ORD20048,7012,Giỏ trái cây nhập khẩu,2
+ORD20048,7012,Phô mai Brie,2
+ORD20048,7012,Bánh tiramisu,3
+ORD20049,7012,Vang Ý Reserva,2
+ORD20050,7012,Socola hạnh nhân,1
+ORD20050,7012,Set quà gourmet,3
+ORD20050,7012,Bánh tiramisu,3
+ORD20051,7012,Bánh tiramisu,1
+ORD20051,7012,Vang Ý Reserva,1
+ORD20052,7012,Thăn bò Wagyu,2
+ORD20053,7012,Socola hạnh nhân,2
+ORD20053,7012,Quà tặng mạ vàng,3
+ORD20053,7012,Thăn bò Wagyu,1
+ORD20054,7012,Vang Ý Reserva,1
+ORD20054,7012,Phô mai Brie,1
+ORD20055,7013,Socola hạnh nhân,1
+ORD20056,7013,Set quà gourmet,3
+ORD20056,7013,Bánh tiramisu,3
+ORD20057,7013,Vang Chile Premium,2
+ORD20057,7013,Socola hạnh nhân,2
+ORD20057,7013,Cá tuyết phi lê,1
+ORD20058,7014,Bánh tiramisu,3
+ORD20059,7014,Quà tặng mạ vàng,3
+ORD20060,7014,Vang Chile Premium,1
+ORD20060,7014,Set quà gourmet,3
+ORD20061,7015,Set quà gourmet,1
+ORD20061,7015,Thăn bò Wagyu,1
+ORD20062,7015,Cá tuyết phi lê,2
+ORD20062,7015,Thăn bò Wagyu,2
+ORD20063,7015,Phô mai Brie,2
+ORD20064,7015,Vang Chile Premium,1
+ORD20065,7015,Quà tặng mạ vàng,2
+ORD20065,7015,Socola hạnh nhân,2
+ORD20065,7015,Vang Chile Premium,1
+ORD20066,7015,Quà tặng mạ vàng,3
+ORD20066,7015,Bánh tiramisu,1
+ORD20067,7016,Thăn bò Wagyu,3
+ORD20067,7016,Socola hạnh nhân,1
+ORD20068,7016,Phô mai Brie,1
+ORD20068,7016,Set quà gourmet,2
+ORD20069,7016,Bánh tiramisu,1
+ORD20070,7017,Set quà gourmet,3
+ORD20071,7017,Giỏ trái cây nhập khẩu,1
+ORD20071,7017,Socola hạnh nhân,3
+ORD20072,7017,Bánh tiramisu,1
+ORD20073,7018,Vang Chile Premium,2
+ORD20073,7018,Giỏ trái cây nhập khẩu,3
+ORD20073,7018,Bánh tiramisu,3
+ORD20074,7018,Cá tuyết phi lê,1
+ORD20074,7018,Phô mai Brie,3
+ORD20075,7018,Giỏ trái cây nhập khẩu,3
+ORD20075,7018,Vang Ý Reserva,3
+ORD20076,7018,Phô mai Brie,2
+ORD20076,7018,Quà tặng mạ vàng,2
+ORD20077,7018,Giỏ trái cây nhập khẩu,1
+ORD20077,7018,Cá tuyết phi lê,2
+ORD20077,7018,Quà tặng mạ vàng,3
+ORD20078,7018,Giỏ trái cây nhập khẩu,1
+ORD20078,7018,Set quà gourmet,3
+ORD20079,7019,Cá tuyết phi lê,3
+ORD20080,7019,Bánh tiramisu,3
+ORD20080,7019,Set quà gourmet,2
+ORD20080,7019,Vang Chile Premium,2
+ORD20081,7019,Socola hạnh nhân,3
+ORD20081,7019,Quà tặng mạ vàng,1
+ORD20081,7019,Set quà gourmet,2
+ORD20082,7019,Quà tặng mạ vàng,3
+ORD20082,7019,Bánh tiramisu,2
+ORD20083,7020,Bánh tiramisu,2
+ORD20084,7020,Bánh tiramisu,1
+ORD20084,7020,Giỏ trái cây nhập khẩu,2
+ORD20084,7020,Quà tặng mạ vàng,2
+ORD20085,7020,Vang Ý Reserva,3
+ORD20085,7020,Set quà gourmet,2
+ORD20086,7020,Phô mai Brie,2
+ORD20086,7020,Vang Ý Reserva,2
+ORD20086,7020,Vang Chile Premium,2
+ORD20087,7020,Giỏ trái cây nhập khẩu,1
+ORD20087,7020,Set quà gourmet,1
+ORD20088,7021,Vang Chile Premium,1
+ORD20089,7021,Vang Ý Reserva,3
+ORD20090,7021,Set quà gourmet,2
+ORD20090,7021,Phô mai Brie,1
+ORD20091,7021,Set quà gourmet,2
+ORD20091,7021,Phô mai Brie,1
+ORD20091,7021,Vang Ý Reserva,1
+ORD20092,7022,Vang Chile Premium,3
+ORD20093,7022,Vang Chile Premium,1
+ORD20094,7022,Socola hạnh nhân,2
+ORD20094,7022,Vang Ý Reserva,3
+ORD20094,7022,Thăn bò Wagyu,3
+ORD20095,7022,Giỏ trái cây nhập khẩu,2
+ORD20096,7022,Phô mai Brie,1
+ORD20096,7022,Quà tặng mạ vàng,1
+ORD20097,7022,Giỏ trái cây nhập khẩu,2
+ORD20097,7022,Thăn bò Wagyu,3
+ORD20098,7023,Set quà gourmet,2
+ORD20099,7023,Vang Ý Reserva,3
+ORD20099,7023,Vang Chile Premium,2
+ORD20099,7023,Quà tặng mạ vàng,2
+ORD20100,7023,Thăn bò Wagyu,2
+ORD20100,7023,Vang Ý Reserva,1
+ORD20101,7023,Socola hạnh nhân,1
+ORD20102,7023,Quà tặng mạ vàng,3
+ORD20102,7023,Phô mai Brie,1
+ORD20103,7023,Bánh tiramisu,1
+ORD20104,7023,Giỏ trái cây nhập khẩu,1
+ORD20104,7023,Vang Ý Reserva,2
+ORD20104,7023,Vang Chile Premium,2
+ORD20105,7024,Socola hạnh nhân,1
+ORD20105,7024,Vang Chile Premium,2
+ORD20106,7024,Vang Chile Premium,1
+ORD20106,7024,Giỏ trái cây nhập khẩu,2
+ORD20106,7024,Cá tuyết phi lê,2
+ORD20107,7024,Giỏ trái cây nhập khẩu,3
+ORD20108,7025,Phô mai Brie,1
+ORD20109,7025,Cá tuyết phi lê,1
+ORD20109,7025,Quà tặng mạ vàng,1
+ORD20109,7025,Bánh tiramisu,1
+ORD20110,7025,Phô mai Brie,2
+ORD20111,7025,Vang Chile Premium,3
+ORD20111,7025,Socola hạnh nhân,3
+ORD20111,7025,Giỏ trái cây nhập khẩu,2
+ORD20112,7025,Cá tuyết phi lê,1
+ORD20112,7025,Set quà gourmet,2
+ORD20113,7025,Vang Chile Premium,3
+ORD20113,7025,Thăn bò Wagyu,2
+ORD20114,7025,Vang Ý Reserva,1
+ORD20114,7025,Phô mai Brie,3
+ORD20114,7025,Bánh tiramisu,2
+ORD20115,7026,Vang Ý Reserva,2
+ORD20115,7026,Giỏ trái cây nhập khẩu,2
+ORD20115,7026,Thăn bò Wagyu,2
+ORD20116,7026,Vang Chile Premium,1
+ORD20116,7026,Cá tuyết phi lê,2
+ORD20116,7026,Giỏ trái cây nhập khẩu,3
+ORD20117,7026,Vang Chile Premium,2
+ORD20117,7026,Quà tặng mạ vàng,2
+ORD20118,7026,Thăn bò Wagyu,1
+ORD20118,7026,Vang Ý Reserva,2
+ORD20119,7026,Vang Chile Premium,3
+ORD20119,7026,Cá tuyết phi lê,1
+ORD20120,7026,Vang Ý Reserva,1
+ORD20120,7026,Set quà gourmet,1
+ORD20120,7026,Bánh tiramisu,3
+ORD20121,7027,Giỏ trái cây nhập khẩu,2
+ORD20122,7027,Socola hạnh nhân,1
+ORD20122,7027,Bánh tiramisu,2
+ORD20122,7027,Cá tuyết phi lê,3
+ORD20123,7027,Quà tặng mạ vàng,1
+ORD20123,7027,Set quà gourmet,3
+ORD20123,7027,Socola hạnh nhân,3
+ORD20124,7027,Bánh tiramisu,3
+ORD20124,7027,Cá tuyết phi lê,2
+ORD20125,7027,Phô mai Brie,3
+ORD20125,7027,Bánh tiramisu,1
+ORD20125,7027,Socola hạnh nhân,3
+ORD20126,7028,Quà tặng mạ vàng,3
+ORD20126,7028,Vang Ý Reserva,3
+ORD20127,7028,Quà tặng mạ vàng,1
+ORD20128,7028,Quà tặng mạ vàng,3
+ORD20128,7028,Socola hạnh nhân,3
+ORD20128,7028,Vang Chile Premium,2
+ORD20129,7029,Vang Chile Premium,2
+ORD20129,7029,Cá tuyết phi lê,1
+ORD20130,7029,Cá tuyết phi lê,2
+ORD20130,7029,Giỏ trái cây nhập khẩu,3
+ORD20130,7029,Set quà gourmet,1
+ORD20131,7029,Vang Ý Reserva,3
+ORD20132,7030,Bánh tiramisu,2
+ORD20132,7030,Thăn bò Wagyu,3
+ORD20133,7030,Cá tuyết phi lê,3
+ORD20134,7030,Giỏ trái cây nhập khẩu,2
+ORD20134,7030,Thăn bò Wagyu,2
+ORD20134,7030,Set quà gourmet,2
+ORD20135,7030,Phô mai Brie,1
+ORD20135,7030,Socola hạnh nhân,1
+ORD20136,7030,Socola hạnh nhân,1
+ORD20136,7030,Bánh tiramisu,3
+ORD20137,7030,Set quà gourmet,2
+ORD20137,7030,Quà tặng mạ vàng,3
+ORD20137,7030,Giỏ trái cây nhập khẩu,1
+ORD20138,7030,Bánh tiramisu,1
+ORD20138,7030,Phô mai Brie,3
+ORD20138,7030,Vang Chile Premium,2
+ORD20139,7031,Quà tặng mạ vàng,1
+ORD20140,7031,Cá tuyết phi lê,2
+ORD20141,7031,Socola hạnh nhân,1
+ORD20141,7031,Quà tặng mạ vàng,2
+ORD20141,7031,Phô mai Brie,3
+ORD20142,7031,Vang Chile Premium,2
+ORD20142,7031,Vang Ý Reserva,2
+ORD20143,7032,Vang Chile Premium,3
+ORD20143,7032,Socola hạnh nhân,2
+ORD20143,7032,Phô mai Brie,2
+ORD20144,7032,Vang Chile Premium,3
+ORD20145,7032,Giỏ trái cây nhập khẩu,3
+ORD20145,7032,Vang Chile Premium,1
+ORD20145,7032,Vang Ý Reserva,1
+ORD20146,7032,Set quà gourmet,1
+ORD20146,7032,Bánh tiramisu,2
+ORD20147,7032,Giỏ trái cây nhập khẩu,1
+ORD20147,7032,Vang Ý Reserva,3
+ORD20147,7032,Set quà gourmet,2
+ORD20148,7033,Quà tặng mạ vàng,3
+ORD20148,7033,Phô mai Brie,3
+ORD20149,7033,Phô mai Brie,1
+ORD20150,7033,Giỏ trái cây nhập khẩu,1
+ORD20150,7033,Socola hạnh nhân,1
+ORD20151,7033,Vang Chile Premium,2
+ORD20151,7033,Bánh tiramisu,3
+ORD20152,7033,Vang Ý Reserva,1
+ORD20152,7033,Phô mai Brie,1
+ORD20152,7033,Set quà gourmet,1
+ORD20153,7033,Vang Ý Reserva,1
+ORD20153,7033,Bánh tiramisu,1
+ORD20153,7033,Thăn bò Wagyu,2
+ORD20154,7034,Set quà gourmet,1
+ORD20155,7034,Vang Ý Reserva,3
+ORD20155,7034,Cá tuyết phi lê,1
+ORD20156,7034,Cá tuyết phi lê,1
+ORD20156,7034,Set quà gourmet,2
+ORD20157,7035,Cá tuyết phi lê,1
+ORD20158,7035,Phô mai Brie,2
+ORD20158,7035,Set quà gourmet,2
+ORD20159,7035,Phô mai Brie,3
+ORD20159,7035,Vang Chile Premium,2
+ORD20159,7035,Socola hạnh nhân,1
+ORD20160,7035,Giỏ trái cây nhập khẩu,2
+ORD20161,7035,Bánh tiramisu,1
+ORD20162,7035,Vang Ý Reserva,1
+ORD20163,7036,Phô mai Brie,1
+ORD20164,7036,Vang Ý Reserva,2
+ORD20165,7036,Cá tuyết phi lê,1

@@ -1,0 +1,83 @@
+@model CustomerDetailsViewModel
+@{
+    ViewData["Title"] = "Chi tiết khách hàng";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="mb-1">Khách hàng #@Model.Customer.ID</h2>
+        <div class="text-muted">@Model.Customer.ClusterName - @Model.Customer.FinalAction</div>
+    </div>
+    <a asp-action="Index" class="btn btn-outline-secondary">Quay lại</a>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-5">
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Chỉ số chính</h5>
+                <div class="detail-grid">
+                    <div><span>Thu nhập</span><strong>@Model.Customer.Income.ToString("N0")</strong></div>
+                    <div><span>Tuổi</span><strong>@Model.Customer.Age</strong></div>
+                    <div><span>Recency</span><strong>@Model.Customer.Recency</strong></div>
+                    <div><span>Web visits</span><strong>@Model.Customer.NumWebVisitsMonth</strong></div>
+                    <div><span>Total spent</span><strong>@Model.Customer.TotalSpent.ToString("N2")</strong></div>
+                    <div><span>Dự báo kỳ tới</span><strong>@Model.Customer.PredictedTotalSpentNextPeriod.ToString("N2")</strong></div>
+                    <div><span>ROI</span><strong>@Model.Customer.CampaignROI.ToString("N2")</strong></div>
+                    <div><span>Độ tin cậy</span><strong>@Model.Customer.ModelConfidence</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title">Đề xuất</h5>
+                <p class="mb-2"><strong>@Model.Customer.RecommendedAction</strong></p>
+                <div class="text-muted">Digital Eligible: @(Model.Customer.DigitalEligible ? "Có" : "Không")</div>
+                <div class="text-muted">Customer type: @Model.Customer.CustomerType (@Model.Customer.ClusterConfidence.ToString("P0"))</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="card shadow-sm border-0 mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Điểm mô hình</h5>
+                <table class="table table-sm mb-0">
+                    <tr><th>Random Forest</th><td>@Model.Customer.ProbRF.ToString("N4")</td></tr>
+                    <tr><th>Linear SVM</th><td>@Model.Customer.ProbLinearSVM.ToString("N4")</td></tr>
+                    <tr><th>LDA</th><td>@Model.Customer.ProbLDA.ToString("N4")</td></tr>
+                    <tr><th>Ensemble Score</th><td>@Model.Customer.EnsembleScore.ToString("N4")</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title">Sản phẩm mua nhiều</h5>
+                @if (Model.TopProducts.Count == 0)
+                {
+                    <div class="text-muted">Chưa có dữ liệu giao dịch cho khách hàng này.</div>
+                }
+                else
+                {
+                    <ul class="mb-3">
+                        @foreach (var product in Model.TopProducts)
+                        {
+                            <li>@product</li>
+                        }
+                    </ul>
+                }
+                <h6 class="mt-3">Giao dịch gần nhất</h6>
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle">
+                        <thead><tr><th>Invoice</th><th>Sản phẩm</th><th>Số lượng</th></tr></thead>
+                        <tbody>
+                        @foreach (var item in Model.Transactions)
+                        {
+                            <tr><td>@item.Invoice_ID</td><td>@item.Product_Name</td><td>@item.Quantity</td></tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

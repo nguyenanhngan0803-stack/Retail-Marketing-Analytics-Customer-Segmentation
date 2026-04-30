@@ -1,0 +1,25 @@
+using MarketingDecisionSupport.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace MarketingDecisionSupport.Controllers;
+
+public class BasketController : Controller
+{
+    private readonly AnalyticsStateService _stateService;
+
+    public BasketController(AnalyticsStateService stateService)
+    {
+        _stateService = stateService;
+    }
+
+    public IActionResult Index()
+    {
+        var snapshot = _stateService.Snapshot;
+        if (snapshot == null)
+        {
+            return RedirectToAction("Index", "Import");
+        }
+
+        return View(snapshot.BasketRules);
+    }
+}

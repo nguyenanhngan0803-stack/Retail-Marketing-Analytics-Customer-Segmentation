@@ -1,0 +1,97 @@
+@model HomeDashboardViewModel
+@{
+    ViewData["Title"] = "Tổng quan";
+}
+
+@if (Model.Snapshot == null)
+{
+    <div class="hero-panel">
+        <h1 class="mb-3">Hệ thống hỗ trợ quyết định marketing</h1>
+        <p class="text-muted mb-4">Phiên bản C# chuyển từ notebook Python: nạp dữ liệu khách hàng, xử lý chỉ số chính, chấm điểm chiến dịch, xếp hạng ưu tiên và gợi ý hành động.</p>
+        <a asp-controller="Import" asp-action="Index" class="btn btn-primary btn-lg">Bắt đầu nạp dữ liệu</a>
+    </div>
+}
+else
+{
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <h2 class="mb-1">Tổng quan điều hành</h2>
+            <div class="text-muted">Cập nhật lúc @Model.Snapshot.ImportedAt.ToString("dd/MM/yyyy HH:mm")</div>
+        </div>
+        <a asp-controller="Import" asp-action="Index" class="btn btn-outline-primary">Nạp lại dữ liệu</a>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-2"><div class="metric-card"><div class="metric-label">Khách hàng</div><div class="metric-value">@Model.Snapshot.TotalCustomers</div></div></div>
+        <div class="col-md-2"><div class="metric-card"><div class="metric-label">Phù hợp digital</div><div class="metric-value">@Model.Snapshot.DigitalEligibleCount</div></div></div>
+        <div class="col-md-2"><div class="metric-card"><div class="metric-label">Nhóm A</div><div class="metric-value">@Model.Snapshot.PriorityCount</div></div></div>
+        <div class="col-md-3"><div class="metric-card"><div class="metric-label">Chi tiêu dự báo TB</div><div class="metric-value">@Model.Snapshot.AvgPredictedSpend.ToString("N2")</div></div></div>
+        <div class="col-md-1"><div class="metric-card"><div class="metric-label">ROI TB</div><div class="metric-value">@Model.Snapshot.AvgRoi.ToString("N2")</div></div></div>
+        <div class="col-md-2"><div class="metric-card"><div class="metric-label">LN kỳ vọng</div><div class="metric-value">@Model.Snapshot.TotalExpectedProfit.ToString("N0")</div></div></div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-lg-7">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Top khách hàng nên ưu tiên</h5>
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nhóm</th>
+                                    <th>Chi tiêu dự báo</th>
+                                    <th>ROI</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var item in Model.TopCustomers)
+                            {
+                                <tr>
+                                    <td><a asp-controller="Customers" asp-action="Details" asp-route-id="@item.ID">@item.ID</a></td>
+                                    <td>@item.ClusterName</td>
+                                    <td>@item.PredictedTotalSpentNextPeriod.ToString("N2")</td>
+                                    <td>@item.CampaignROI.ToString("N2")</td>
+                                    <td>@item.FinalAction</td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Phân bố theo nhóm hành động</h5>
+                    <ul class="list-group list-group-flush">
+                        @foreach (var item in Model.ActionCounts.OrderBy(x => x.Key))
+                        {
+                            <li class="list-group-item d-flex justify-content-between px-0">
+                                <span>@item.Key</span>
+                                <strong>@item.Value</strong>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Chi tiêu dự báo TB theo nhóm</h5>
+                    <ul class="list-group list-group-flush">
+                        @foreach (var item in Model.AvgSpendByAction.OrderByDescending(x => x.Value))
+                        {
+                            <li class="list-group-item d-flex justify-content-between px-0">
+                                <span>@item.Key</span>
+                                <strong>@item.Value.ToString("N2")</strong>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+}

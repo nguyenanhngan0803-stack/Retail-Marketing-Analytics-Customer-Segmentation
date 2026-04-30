@@ -1,0 +1,72 @@
+@model CustomerListViewModel
+@{
+    ViewData["Title"] = "Khách hàng";
+    var actions = new[] { "A - Digital Priority", "B - Digital Standard", "C - Digital Test", "D - Không ưu tiên" };
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-3">
+    <h2 class="mb-0">Danh sách khách hàng</h2>
+    <form method="get" class="row g-2 align-items-end">
+        <div class="col-auto">
+            <label class="form-label">Tìm ID</label>
+            <input name="search" value="@Model.Search" class="form-control" />
+        </div>
+        <div class="col-auto">
+            <label class="form-label">Nhóm hành động</label>
+            <select name="actionFilter" class="form-select">
+                <option value="">Tất cả</option>
+                @foreach (var item in actions)
+                {
+                    @if (Model.ActionFilter == item)
+                {
+                    <option value="@item" selected>@item</option>
+                }
+                else
+                {
+                    <option value="@item">@item</option>
+                }
+                }
+            </select>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Lọc</button>
+        </div>
+    </form>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-sm align-middle">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cụm</th>
+                        <th>Chi tiêu hiện tại</th>
+                        <th>Chi tiêu dự báo</th>
+                        <th>ROI</th>
+                        <th>Digital</th>
+                        <th>Hành động</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.Customers)
+                {
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.ClusterName</td>
+                        <td>@item.TotalSpent.ToString("N2")</td>
+                        <td>@item.PredictedTotalSpentNextPeriod.ToString("N2")</td>
+                        <td>@item.CampaignROI.ToString("N2")</td>
+                        <td>@(item.DigitalEligible ? "Có" : "Không")</td>
+                        <td>@item.FinalAction</td>
+                        <td><a asp-action="Details" asp-route-id="@item.ID" class="btn btn-sm btn-outline-secondary">Xem</a></td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="small text-muted">Hiển thị tối đa 300 khách để giao diện gọn hơn.</div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+@model AnalyticsSnapshot
+@{
+    ViewData["Title"] = "Chiến dịch";
+}
+
+<h2 class="mb-4">Tóm tắt chiến dịch</h2>
+
+<div class="row g-4 mb-4">
+    <div class="col-lg-6">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <h5 class="card-title">Phân bổ hành động</h5>
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead><tr><th>Nhóm</th><th>Số khách</th><th>Chi tiêu dự báo TB</th><th>ROI TB</th><th>LN kỳ vọng TB</th></tr></thead>
+                        <tbody>
+                        @foreach (var item in Model.ActionSummaries)
+                        {
+                            <tr>
+                                <td>@item.FinalAction</td>
+                                <td>@item.SoKhach</td>
+                                <td>@item.ChiTieuDuBaoTB.ToString("N2")</td>
+                                <td>@item.RoiTrungBinh.ToString("N2")</td>
+                                <td>@item.LoiNhuanKyVongTB.ToString("N2")</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+                <h5 class="card-title">Top 20 khách hàng ưu tiên</h5>
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle">
+                        <thead><tr><th>ID</th><th>Chi tiêu dự báo</th><th>ROI</th><th>Action</th></tr></thead>
+                        <tbody>
+                        @foreach (var item in Model.Customers.Take(20))
+                        {
+                            <tr>
+                                <td><a asp-controller="Customers" asp-action="Details" asp-route-id="@item.ID">@item.ID</a></td>
+                                <td>@item.PredictedTotalSpentNextPeriod.ToString("N2")</td>
+                                <td>@item.CampaignROI.ToString("N2")</td>
+                                <td>@item.FinalAction</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <h5 class="card-title">Ngưỡng thực thi</h5>
+        <div class="text-muted">Hệ thống gán A/B/C/D theo phân vị 90% / 70% / 40% trên tập khách hàng phù hợp digital, tương tự luồng notebook.</div>
+    </div>
+</div>

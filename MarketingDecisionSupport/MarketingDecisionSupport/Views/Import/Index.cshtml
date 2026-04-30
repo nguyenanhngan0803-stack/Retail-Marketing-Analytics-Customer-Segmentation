@@ -1,0 +1,40 @@
+@model ImportViewModel
+@{
+    ViewData["Title"] = "Nạp dữ liệu";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <h2 class="mb-3">Nạp dữ liệu từ file CSV</h2>
+                <p class="text-muted">Hệ thống đọc file khách hàng theo cấu trúc từ notebook Python. File giao dịch là tùy chọn, dùng để phân tích giỏ hàng và luật mua kèm.</p>
+
+                @if (!string.IsNullOrWhiteSpace(Model.Message))
+                {
+                    <div class="alert @(Model.IsSuccess ? "alert-success" : "alert-danger")">@Model.Message</div>
+                }
+
+                <form asp-action="Index" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label class="form-label">File khách hàng</label>
+                        <input asp-for="CustomerFile" class="form-control" accept=".csv" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">File giao dịch</label>
+                        <input asp-for="TransactionFile" class="form-control" accept=".csv" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Nạp và phân tích</button>
+                </form>
+
+                <hr class="my-4" />
+                <h5>Gợi ý cột cần có</h5>
+                <div class="small text-muted">
+                    <div><strong>Khách hàng:</strong> ID, Year_Birth, Income, Kidhome, Teenhome, Dt_Customer, Recency, MntWines, MntFruits, MntMeatProducts, MntFishProducts, MntSweetProducts, MntGoldProds, NumDealsPurchases, NumWebPurchases, NumWebVisitsMonth...</div>
+                    <div class="mt-2"><strong>Giao dịch:</strong> Invoice_ID, Customer_ID, Product_Name, Quantity</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
